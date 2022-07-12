@@ -23,7 +23,7 @@ const FaqPage = () => {
 
   return (
     <div className='faqPage'>
-      <h1>Foire Aux Questions</h1>
+      <h1> Rocher à questions </h1>
       <div className='faqs'>
         {faqs.map((faq, i) => (
           <Faq faq={faq} key={i} index={i} toggleFAQ={toggleFAQ} />
