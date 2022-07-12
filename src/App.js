@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Home from "./screens/Home";
 import FaqPage from "./screens/FaqPage";
+import Reservation from "./components/Reservation";
 
 function App() {
   const [caverns, setCaverns] = useState([]);
@@ -40,6 +41,7 @@ function App() {
           }
         />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/detail" element={<CavernDetails caverns={caverns} setCaverns={setCaverns} />}/>
       </Routes>
     </div>
   );

@@ -1,3 +1,5 @@
+import Reservation from "../components/Reservation";
+
 const CavernDetails = (props) => {
     const {
         caverns
@@ -17,6 +19,7 @@ const CavernDetails = (props) => {
      </div>    
       )
       }
+      <Reservation />
     </div>
    )}
 

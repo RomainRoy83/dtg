@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SearchBar from "../components/SearchBar";
+import Reservation from "../components/Reservation";
 
 const Home = (props) => {
   const { caverns, setCaverns, cavernsFiltered, setCavernsFiltered } = props;
