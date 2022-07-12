@@ -1,3 +1,4 @@
+import CavernDetails from "./screens/CavernDetails";
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
@@ -25,6 +26,7 @@ function App() {
       {console.log(cavernsFiltered) ||
         (cavernsFiltered &&
           cavernsFiltered.map((cavern) => <h1>{cavern.name}</h1>))}
+
       <Routes>
         <Route
           path="/"
@@ -44,3 +46,6 @@ function App() {
 }
 
 export default App;
+            // <CavernDetails //* rendre accéssible depuis composant Romain
+            //   caverns={caverns}
+            //   setCaverns={setCaverns}
