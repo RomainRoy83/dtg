@@ -27,6 +27,7 @@ const Home = (props) => {
 
   return (
     <div className="home">
+      <h1> Poulet Home </h1>
       <SearchBar // à déplacer dans le Header
         locationChoice={locationChoice} // à déplacer dans le Header
         setLocationChoice={setLocationChoice} // à déplacer dans le Header

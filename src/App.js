@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Home from "./screens/Home";
+import FaqPage from "./screens/FaqPage";
 
 function App() {
   const [caverns, setCaverns] = useState([]);
@@ -36,6 +37,7 @@ function App() {
             />
           }
         />
+        <Route path="/faq" element={<FaqPage />} />
       </Routes>
     </div>
   );
