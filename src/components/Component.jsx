@@ -1,6 +1,6 @@
 const Component = () => {
   return (
-    <div>
+    <div className='component'>
       
     </div>
   );
