@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-// import logo from '../assets/img'
+import logo from '../assets/img/logo.png'
 import React from 'react'
 import '../assets/scss/_Header.scss'
 
 const Header = props => {
   return (
     <div className='navbar'>
-      <a href='/'>{/* <img className='nav-logo' src={logo} alt='logo' /> */}</a>
       <nav className='nav-container'>
+        <a href='/'>{<img className='nav-logo' src={logo} alt='logo' />}</a>
         <ul className='nav-liste'>
           <li className='nav-items'>
             <Link to='/'>Accueil</Link>
@@ -21,6 +21,7 @@ const Header = props => {
         </ul>
       </nav>
       <div></div>
+      <p className='concept'>Location de cavernes saisonnières</p>
     </div>
   )
 }
