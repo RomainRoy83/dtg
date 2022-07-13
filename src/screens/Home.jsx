@@ -1,13 +1,25 @@
 import { useEffect, useState } from 'react'
+import axios from 'axios'
 import Card from '../components/Card'
 import SearchBar from '../components/SearchBar'
 import Reservation from '../components/Reservation'
 
 const Home = props => {
-  const { caverns, setCaverns, cavernsFiltered, setCavernsFiltered } = props
   const [locationChoice, setLocationChoice] = useState('')
   const [periodChoice, setPeriodChoice] = useState('')
   const [capacityChoice, setCapacityChoice] = useState('')
+  const [caverns, setCaverns] = useState([])
+  const [cavernsFiltered, setCavernsFiltered] = useState([])
+
+  useEffect(() => {
+    const getCaverns = () => {
+      axios.get('http://localhost:4402/grottes/').then(res => {
+        setCaverns(res.data)
+        setCavernsFiltered(res.data)
+      })
+    }
+    getCaverns()
+  }, [])
 
   useEffect(() => {
     getCavernsFiltered()
@@ -22,24 +34,21 @@ const Home = props => {
       .filter(cavern =>
         capacityChoice ? cavern.capacity === capacityChoice : true
       )
+    console.log('result', { result })
     setCavernsFiltered(result)
   }
 
   return (
     <div className='home'>
-      {console.log(cavernsFiltered) ||
-        (cavernsFiltered &&
-          cavernsFiltered.map(cavern => <h1>{cavern.name}</h1>))}
-      <h1> Poulet Home </h1>
-      <SearchBar // à déplacer dans le Header
-        locationChoice={locationChoice} // à déplacer dans le Header
-        setLocationChoice={setLocationChoice} // à déplacer dans le Header
-        periodChoice={periodChoice} // à déplacer dans le Header
-        setPeriodChoice={setPeriodChoice} // à déplacer dans le Header
-        capacityChoice={capacityChoice} // à déplacer dans le Header
-        setCapacityChoice={setCapacityChoice} // à déplacer dans le Header
+      <SearchBar
+        locationChoice={locationChoice}
+        setLocationChoice={setLocationChoice}
+        periodChoice={periodChoice}
+        setPeriodChoice={setPeriodChoice}
+        capacityChoice={capacityChoice}
+        setCapacityChoice={setCapacityChoice}
       />
-      <Card />
+      <Card cavernsFiltered={cavernsFiltered} />
     </div>
   )
 }
