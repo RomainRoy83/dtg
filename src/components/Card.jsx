@@ -8,7 +8,8 @@ const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
   const [likes, setLikes] = useState(
-    localStorage.getItem('countfav') ? localStorage.getItem('countfav') : 0
+    0
+    // localStorage.getItem('countfav') ? localStorage.getItem('countfav') : 0
   )
 
   const navigate = useNavigate()
@@ -34,7 +35,7 @@ const Card = ({ cavernsFiltered }) => {
     <div className='card'>
       <main className='main'>
         <section className='card-lg__container'>
-          <p>count: {likes} </p>
+          <p className='card__text-sm'>count: {likes} </p>
           <p className='card__text-sm'>Sierra Desert - Morocco</p>
           <h1 className='card__text-lg'>Marrakech Merzouga</h1>
           <p className='card__text-md'>
