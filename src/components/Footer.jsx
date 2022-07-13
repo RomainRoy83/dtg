@@ -6,7 +6,7 @@ import '../assets/scss/_Footer.scss'
 
 // import twitterImg from '../assets/img/logoResaux/twitter.png'
 
-const Footer = props => {
+const Footer = () => {
   return (
     <footer>
       <div className='footerbody'>

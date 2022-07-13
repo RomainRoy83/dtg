@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import Favourite from './Favourite'
 import { useNavigate } from 'react-router-dom'
-
 import axios from 'axios'
-
 const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
@@ -36,13 +34,11 @@ const Card = ({ cavernsFiltered }) => {
       <main className='main'>
         <section className='card-lg__container'>
           <p className='card__text-sm'>count: {likes} </p>
-          <p className='card__text-sm'>Sierra Desert - Morocco</p>
-          <h1 className='card__text-lg'>Marrakech Merzouga</h1>
-          <p className='card__text-md'>
-            Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.
-          </p>
+          <p className='card__text-sm'>Pangée</p>
+          <h1 className='card__text-lg'>Grégogrotte</h1>
+          <p className='card__text-md'>La caverne qui fait plouf.</p>
           <a href='#' className='card__btn'>
-            Discover Location
+            Découvrir ce trou
           </a>
         </section>
 

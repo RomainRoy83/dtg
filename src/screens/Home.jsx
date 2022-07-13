@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from '../components/Card'
 import SearchBar from '../components/SearchBar'
-import Reservation from '../components/Reservation'
 
-const Home = props => {
+const Home = () => {
   const [locationChoice, setLocationChoice] = useState('')
   const [periodChoice, setPeriodChoice] = useState('')
   const [capacityChoice, setCapacityChoice] = useState('')
@@ -40,6 +39,9 @@ const Home = props => {
 
   return (
     <div className='home'>
+      <div className='concept'>
+        <p>Faites votre trou pour les vacances</p>
+      </div>
       <SearchBar
         locationChoice={locationChoice}
         setLocationChoice={setLocationChoice}

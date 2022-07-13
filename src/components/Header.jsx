@@ -3,7 +3,7 @@ import logo from '../assets/img/logo.png'
 import React from 'react'
 import '../assets/scss/_Header.scss'
 
-const Header = props => {
+const Header = () => {
   return (
     <div className='navbar'>
       <nav className='nav-container'>
@@ -20,8 +20,6 @@ const Header = props => {
           </li>
         </ul>
       </nav>
-      <div></div>
-      <p className='concept'>Location de cavernes saisonnières</p>
     </div>
   )
 }
