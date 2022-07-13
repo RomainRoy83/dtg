@@ -5,7 +5,8 @@
     align-items: center;
     align-content: center;
     width: 100vw;
-    height: 100vh;
+    min-width: 800px;
+    z-index: 0;
 
     .detailsPhoto{
         width: 100%;
@@ -47,7 +48,9 @@
 
     .cavernResa {
         display: flex;
+        justify-content: center;
         margin: 50px;
         gap: 50px;
+        width: 100%;
     }
 }

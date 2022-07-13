@@ -1,9 +1,8 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
 import '../assets/scss/_Contact.scss'
 import Contactbb from '../assets/img/Contact.png'
 
-const Contact = props => {
+const Contact = () => {
   return (
     <div className='container-contact'>
       <div className='contact-box'>

@@ -39,6 +39,9 @@ const Home = () => {
 
   return (
     <div className='home'>
+      <div className='concept'>
+        <p>Faites votre trou pour les vacances</p>
+      </div>
       <SearchBar
         locationChoice={locationChoice}
         setLocationChoice={setLocationChoice}

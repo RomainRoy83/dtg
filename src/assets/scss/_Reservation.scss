@@ -1,4 +1,6 @@
 .form-container {
+
+  width: 50%;
   
   .resa-container {
     display: flex;
@@ -9,7 +11,7 @@
     border: solid 5px white;
     border-radius: 10px;
     background-color: white;
-    width: 40vw;
+    width: fit-content;
     gap:20px;
     box-shadow: 5px 5px 5px grey;
     margin: 30px 50px;
