@@ -7,6 +7,7 @@ import axios from 'axios'
 import Home from './screens/Home'
 import FaqPage from './screens/FaqPage'
 import Contact from './screens/Contact'
+import Reservation from './components/Reservation'
 
 function App() {
   const [caverns, setCaverns] = useState([])
@@ -45,6 +46,7 @@ function App() {
         />
         <Route path='/faq' element={<FaqPage />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/detailsgrotte/:id' element={<CavernDetails />} />
       </Routes>
       <Footer className='footer' />
     </div>
