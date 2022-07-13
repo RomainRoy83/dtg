@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 
 const Card = () => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const scrollContainer = document.querySelector('main')
@@ -41,7 +44,7 @@ const Card = () => {
               key={grotto.id}
               className='card-sm'
               style={{ backgroundImage: `url(${grotto.photo})` }}
-              onClick={() => setDetails(grotto.id)}
+              onClick={() => navigate(`/detailsgrotte/${grotto.id}`)}
             >
               <p className='card__text-sm'>{grotto.location}</p>
               <h1 className='card__text-lg'>{grotto.name}</h1>
