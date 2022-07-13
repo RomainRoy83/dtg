@@ -44,7 +44,7 @@ function App() {
         <Route path="/detail" element={<CavernDetails caverns={caverns} setCaverns={setCaverns} />}/>
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;

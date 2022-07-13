@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 function Faq({ faq, index, toggleFAQ }) {
   return (
     <div
