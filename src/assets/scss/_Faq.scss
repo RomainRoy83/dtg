@@ -1,0 +1,105 @@
+.faqs {
+  width: 100%;
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+
+
+.faqs .faq {
+  margin: 0 15px 15px;
+  padding: 15px;
+  background-color: #5C4742;
+  border-radius: 15px;
+
+}
+.faqs .faq:hover {
+transform: scale(1.1) ;
+transition: 0.2s;
+}
+
+.faqs .faq .faq-question {
+  position: relative;
+  font-size: 20px;
+  padding-right: 40px;
+  color: white;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.faqs .faq .faq-question::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  transform: translateY(-20%);
+  transform: scale(0.9) ;
+  transition: 0.1s;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/down-arrow-svgrepo-com.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.faqs .faq.open .faq-question::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  opacity: 1;
+}
+.faqs h4 {
+padding: 5vh 2vh 5vh;
+
+}
+
+.faqPage h1 {
+font-size: 3em;
+margin: 80px;
+color: #5C4742;
+text-align: center;
+}
+
+
+
+
+// Media screeen du love ! 
+@media screen and (max-width: 500px) {
+.faqs {
+    padding: 50px 0 100px;
+}
+.faqs .faq:hover {
+    transform: none ;
+}
+
+.faqPage h1 {
+    font-size: 2em;
+    margin: 20px;
+}
+}
+
+
+.FAQ-link{
+color:black;
+text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+.home {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  .concept {
+    margin-top: 40px;
+    font-size: 26px;
+    font-style: italic;
+    color: #5A2A27;
+    text-align: center;
+    font-weight: bold;
+  }
+}
