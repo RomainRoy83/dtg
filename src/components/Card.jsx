@@ -7,6 +7,7 @@ import axios from 'axios'
 const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
+  const [likes, setLikes] = useState(0)
 
   const navigate = useNavigate()
   useEffect(() => {
@@ -24,10 +25,14 @@ const Card = ({ cavernsFiltered }) => {
       .then(res => setGrottos(res.data))
   }, [])
 
+  useEffect(() => {
+    console.log('maj like:', likes)
+  }, [likes])
   return (
     <div className='card'>
       <main className='main'>
         <section className='card-lg__container'>
+          <p>count: {likes} </p>
           <p className='card__text-sm'>Sierra Desert - Morocco</p>
           <h1 className='card__text-lg'>Marrakech Merzouga</h1>
           <p className='card__text-md'>
@@ -51,7 +56,7 @@ const Card = ({ cavernsFiltered }) => {
                 <h1 className='card__text-lg'>{grotto.name}</h1>
               </section>
               <div className='card__fav'>
-                <Favourite />
+                <Favourite likes={likes} setLikes={setLikes} />
               </div>
             </div>
           ))}
