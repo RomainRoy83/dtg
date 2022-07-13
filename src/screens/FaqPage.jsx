@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
-
 import Faq from '../components/Faq'
-import questions from '../components/questions.json'
+import questions from '../assets/json/questions.json'
 
 const FaqPage = () => {
   const [faqs, setfaqs] = useState(questions)
@@ -28,7 +27,6 @@ const FaqPage = () => {
         {faqs.map((faq, i) => (
           <Faq faq={faq} key={i} index={i} toggleFAQ={toggleFAQ} />
         ))}
-
       </div>
     </div>
   )
@@ -36,35 +34,7 @@ const FaqPage = () => {
 
 export default FaqPage
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { useState, useEffect } from "react";
-
-
 
 // function Faq(props) {
 //     const [searchWords, setSearchWords] = useState('');
@@ -106,7 +76,7 @@ export default FaqPage
 //                 <input className="searchbar" type='text' placeholder='Quel est votre problème ?' onChange={handleChange} value={value}/>
 //         </form>
 //     )
-// } 
+// }
 
 // const Question = props => {
 //     const [isActive, setActive] = useState(false);
@@ -124,7 +94,7 @@ export default FaqPage
 //                 </button>
 //             </div>
 //             <div className={isActive? 'answer active' : 'answer'}>{props.answer}</div>
-//     </div>    
+//     </div>
 //                     )
 // }
 // // render(<Faq data={questions}/>, document.querySelector('#root'));
