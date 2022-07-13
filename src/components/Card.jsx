@@ -5,7 +5,6 @@ import axios from 'axios'
 
 const Card = () => {
   const [grottos, setGrottos] = useState([])
-  const [details, setDetails] = useState('')
 
   const navigate = useNavigate()
 
@@ -28,13 +27,11 @@ const Card = () => {
     <div className='card'>
       <main className='main'>
         <section className='card-lg__container'>
-          <p className='card__text-sm'>Sierra Desert - Morocco</p>
-          <h1 className='card__text-lg'>Marrakech Merzouga</h1>
-          <p className='card__text-md'>
-            Duis aute irure dolor in reprehenderit in voluptate nulla pariatur.
-          </p>
+          <p className='card__text-sm'>Pangée</p>
+          <h1 className='card__text-lg'>Grégogrotte</h1>
+          <p className='card__text-md'>La caverne qui fait plouf.</p>
           <a href='#' className='card__btn'>
-            Discover Location
+            Découvrir ce trou
           </a>
         </section>
 
