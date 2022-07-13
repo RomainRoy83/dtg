@@ -27,6 +27,9 @@ const Home = props => {
 
   return (
     <div className='home'>
+      {console.log(cavernsFiltered) ||
+        (cavernsFiltered &&
+          cavernsFiltered.map(cavern => <h1>{cavern.name}</h1>))}
       <h1> Poulet Home </h1>
       <SearchBar // à déplacer dans le Header
         locationChoice={locationChoice} // à déplacer dans le Header
