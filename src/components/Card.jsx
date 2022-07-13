@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 
-const Card = () => {
+const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
 
   const navigate = useNavigate()
@@ -36,7 +36,7 @@ const Card = () => {
         </section>
 
         <section className='card-sm__container'>
-          {grottos.map(grotto => (
+          {cavernsFiltered.map(grotto => (
             <section
               key={grotto.id}
               className='card-sm'
