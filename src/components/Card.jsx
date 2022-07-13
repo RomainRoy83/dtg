@@ -43,7 +43,7 @@ const Card = ({ cavernsFiltered }) => {
         </section>
 
         <section className='card-sm__container'>
-          {grottos.map(grotto => (
+          {cavernsFiltered.map(grotto => (
             <div className='card__wrapper_map'>
               <section
                 key={grotto.id}
