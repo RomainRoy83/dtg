@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import axios from 'axios'
-
 const Card = ({ cavernsFiltered }) => {
-  const [grottos, setGrottos] = useState([])
-
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -16,12 +12,6 @@ const Card = ({ cavernsFiltered }) => {
       scrollContainer.scrollLeft += evt.deltaY
     })
   })
-
-  useEffect(() => {
-    axios
-      .get('http://localhost:4402/grottes/')
-      .then(res => setGrottos(res.data))
-  }, [])
 
   return (
     <div className='card'>

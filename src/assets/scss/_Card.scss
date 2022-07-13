@@ -13,9 +13,9 @@ $secondary-font:'Oswald', sans-serif;
     background-size: cover;
     box-shadow: 
       inset 0 0 100vw 100vw rgba(0,0,0,0.3),0 16px 8px -8px rgba(0, 0, 0, 0.4);
-    width: 1000px;
     height: 440px;
     padding: 0 0 32px;
+    width: 100vw;
     display: flex;
     overflow-x: scroll;
   }
