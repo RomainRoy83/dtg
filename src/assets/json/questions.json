@@ -1,54 +1,39 @@
 [
   {
       "id": 0,
-      "question" : "Question 01",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Pouvons-nous annuler en cas d'absence de nounou pour notre Mammouth ?",
+      "answer": "Non, c'est votre problème de faire garder Napoléon..."
   },
    {
       "id": 1,
-      "question" : "Question 02",
-     "answer":"Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Autorisez-vous les lions de compagnie ?",
+     "answer":"Cela dépends de qui il attaquera en premier. On ne rembourse pas les enfants disparus ''mystérieusement''"
    },
     {
       "id": 2,
-      "question" : "Question 03",
-     "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Les massues sont-elles autorisées dans l'enceinte des grottes ? ",
+     "answer": "Elles sont recommandées car aucune autre protection ne saurait vous défendre des tribus alentour (ou de votre femme)."
 
     },
     {
       "id": 3,
-      "question" : "Question 04",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Y a t'il des risques à venir emménager quelques jours dans ces grottes ?",
+      "answer": "Trop pour tous les énoncer ici, veuillez vous reporter au menhir d'or pour plus d'informations sur la qualité de nos séjours."
     },
     {
       "id": 4,
-      "question" : "Question 05",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Pouvons-nous garder pour le séjour comme esclave l'hôte de la grotte ?",
+      "answer": "Essayez: s'il est de bonne humeur il ne vous enlèveras qu'un bras sur les deux."
     },
     {
       "id": 5,
-      "question" : "Question 06",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping." 
+      "question" : "Les animaux sauvages passent-ils souvent dans les environs ? ",
+      "answer": "Testez. Vous nous direz si vous revenez." 
     },
     {
       "id": 6,
-      "question" : "Question 07",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping." 
-    },
-    {
-      "id": 7,
-      "question" : "Question 08",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
-    },
-    {
-      "id": 8,
-      "question" : "Question 09",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
-    },
-    {
-      "id": 9,
-      "question" : "Question 10",
-      "answer": "Cupcake ipsum dolor sit amet tiramisu cake candy. Bonbon gummies gummies chocolate oat cake sweet gummi bears cookie bonbon. Danish halvah tootsie roll ice cream cake danish topping."
+      "question" : "Quelles sont vos garanties liées à la location ? ",
+      "answer": "Nous assurons les murs. Rien que les murs. Les animaux sauvages, les attaques de tribues voisines, les bouts de silexs jonchés sur le sol et l'odeur de la pièce ne sont pas sous notre contrôle." 
     }
 
 ]
