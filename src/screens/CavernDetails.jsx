@@ -35,7 +35,7 @@ const CavernDetails = () => {
             <p className='detailsDescription'>{cavern.description2}</p>
             <p>Prix : {cavern.price}</p>
           </div>
-          <Reservation />
+          <Reservation id={id} cavern={cavern} />
         </>
       )}
     </div>
