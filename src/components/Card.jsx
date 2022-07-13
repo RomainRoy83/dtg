@@ -4,9 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 
-import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined'
-
-const Card = () => {
+const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
 
