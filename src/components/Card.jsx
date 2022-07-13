@@ -9,7 +9,6 @@ const Card = ({ cavernsFiltered }) => {
   const [details, setDetails] = useState('')
 
   const navigate = useNavigate()
-
   useEffect(() => {
     const scrollContainer = document.querySelector('main')
 
