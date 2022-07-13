@@ -33,7 +33,7 @@ const Card = ({ cavernsFiltered }) => {
     <div className='card'>
       <main className='main'>
         <section className='card-lg__container'>
-          <p className='card__text-sm'>count: {likes} </p>
+          <p className='card__text-sm'>Favoris: {likes} </p>
           <p className='card__text-sm'>Pangée</p>
           <h1 className='card__text-lg'>Grégogrotte</h1>
           <p className='card__text-md'>La caverne qui fait plouf.</p>
@@ -43,7 +43,7 @@ const Card = ({ cavernsFiltered }) => {
         </section>
 
         <section className='card-sm__container'>
-          {grottos.map(grotto => (
+          {cavernsFiltered.map(grotto => (
             <div className='card__wrapper_map'>
               <section
                 key={grotto.id}
