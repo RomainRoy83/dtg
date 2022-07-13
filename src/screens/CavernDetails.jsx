@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Reservation from '../components/Reservation'
 
@@ -22,20 +22,32 @@ const CavernDetails = () => {
     <div className='cavernDetails'>
       {cavern && (
         <>
-          <p>Détails de la grotte</p>
-          <div className='cavernDetails'>
+          <div className='grottoDetails'>
             <img
               className='detailsPhoto'
               src={cavern.photo}
               alt={cavern.name}
-            ></img>
-            <h1 className='cavernName'>{cavern.name}</h1>
-            <p>Type : {cavern.capacity}</p>
-            <p>{cavern.description1}</p>
-            <p className='detailsDescription'>{cavern.description2}</p>
-            <p>Prix : {cavern.price}</p>
+            />
+            <div className='cavernResa'>
+              <div className='cavernInfo'>
+                <div className='infoHeader'>
+                  <h1 className='cavernName'>{cavern.name}</h1>
+                  <h2 className='cavernType'>Type : {cavern.capacity}</h2>
+                  <p className='cavernDescription'>{cavern.description1}</p>
+                </div>
+                <div className='line'></div>
+                <p className='detailsDescription'>{cavern.description2}</p>
+                <div className='line'></div>
+                <p className='cavernPrice'>Prix : {cavern.price}/nuit</p>
+                <Link to='/' className='backLink'>
+                  <button className='back'>
+                    Revenir à la liste des cavernes
+                  </button>
+                </Link>
+              </div>
+              <Reservation id={id} cavern={cavern} />
+            </div>
           </div>
-          <Reservation id={id} cavern={cavern} />
         </>
       )}
     </div>

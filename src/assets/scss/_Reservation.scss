@@ -1,77 +1,120 @@
-.resa-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content:center;
-  justify-content: center;
-  border: solid 5px white;
-  border-radius: 10px;
-  background-color: white;
-   width:400px;
-  padding:20px;
-  gap:20px;
-  box-shadow: 5px 5px 5px grey;
-  margin:30px auto;
-}
-
 .form-container {
-  display: flex;
-  justify-content: center;
-  margin:30px auto;
-}
 
-.criterias-container {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap:20px;
-  flex-wrap: wrap;
-}
+  width: 50%;
+  
+  .resa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border: solid 5px white;
+    border-radius: 10px;
+    background-color: white;
+    width: fit-content;
+    gap:20px;
+    box-shadow: 5px 5px 5px grey;
+    margin: 30px 50px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .resaGlobal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .request {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    gap: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin:30px auto;
+  }
+  
+  .criterias-container {
+    display:flex;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+  }
+  
+  .personInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .resa-inputs {
+    display:flex;
+    align-self: flex-start;
+    gap:15px;
+  }
+  
+  .lastName {
+    padding: 0 0 0 20px;
+  }
 
-.resa-inputs {
-  display:flex;
-  align-self: flex-start;
-  gap:15px;
-  padding:0 0 0 30px;
-}
+  .nights {
+    width: 56px;
+    font-size: .9rem;
+  }
 
-.lasstName {
-  padding: 0 0 0 20px;
-}
-
-.resa-title {
-text-align: center;
-font-size: 1.5rem;
-
-}
-
-.resa-criteria {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #8D5B4C ;
-  width:150px;
-  height:50px;
-  padding:10px;
-  border-radius: 20px;
+  .howManyNights {
+    padding: 10px;
+    height: 20px;
+    width: 165px;
+  }
+  
+  .resa-title {
   text-align: center;
-  color:white;
-}
-
-.resa-button {
-  width:150px;
-  height: 30px;
-  background-color: #c4bbaf;
-  color:white;
-  border: solid 1px #515A47;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px grey;
-  font-size: large;
-  font-weight: bold;
-  background-color: #515A47;
-}
-
-.resa-text-area {
-  width:250px;
-  height:150px;
+  font-size: 1.5rem;
+  
+  }
+  
+  .resa-criteria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8D5B4C ;
+    width:fit-content;
+    height:30px;
+    line-height: 1.2rem;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    color:white;
+  }
+  
+  .resa-button {
+    width:150px;
+    height: 30px;
+    background-color: #c4bbaf;
+    color:white;
+    border: solid 1px #515A47;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    font-size: large;
+    font-weight: bold;
+    background-color: #515A47;
+    cursor: pointer;
+  }
+  
+  .resa-text-area {
+    width:250px;
+    height:150px;
+  }
 }

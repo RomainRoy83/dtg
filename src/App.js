@@ -1,13 +1,11 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import CavernDetails from './screens/CavernDetails'
-import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import axios from 'axios'
 import Home from './screens/Home'
 import FaqPage from './screens/FaqPage'
 import Contact from './screens/Contact'
-import Reservation from './components/Reservation'
+
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
