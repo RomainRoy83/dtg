@@ -9,17 +9,21 @@ import '../assets/scss/_Footer.scss'
 const Footer = props => {
   return (
     <footer>
-      <p className='reseaux'>Suivez nous sur nos réseaux :</p>
       <div className='footerbody'>
-        <div className='logos'>
-          <ul className='img'>
+        <div className='footer-logos'>
+          <p className='reseaux'>Suivez nous sur nos réseaux :</p>
+          <ul className='footer-image'>
             <li>
               <a
                 target='_blank'
                 href='https://www.facebook.com/'
                 rel='noreferrer'
               >
-                <img src={facebookImg} alt='logo facebook'></img>
+                <img
+                  className='footer-logo'
+                  src={facebookImg}
+                  alt='logo facebook'
+                ></img>
               </a>
             </li>
             <li>
@@ -28,7 +32,11 @@ const Footer = props => {
                 href='https://www.instagram.com/?hl=fr'
                 rel='noreferrer'
               >
-                <img src={instagramImg} alt='logo instagram'></img>
+                <img
+                  className='footer-logo'
+                  src={instagramImg}
+                  alt='logo instagram'
+                ></img>
               </a>
             </li>
           </ul>
@@ -39,10 +47,7 @@ const Footer = props => {
             <Link to='/'></Link>
           </li>
           <li>
-            <Link to='/faqp'>FAQ</Link>
-          </li>
-          <li>
-            <Link to='/apropos'>A propos</Link>
+            <Link to='/faq'>FAQ</Link>
           </li>
           <li>
             <Link to='/'>Contact</Link>
