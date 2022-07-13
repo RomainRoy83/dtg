@@ -7,7 +7,9 @@ import axios from 'axios'
 const Card = ({ cavernsFiltered }) => {
   const [grottos, setGrottos] = useState([])
   const [details, setDetails] = useState('')
-  const [likes, setLikes] = useState(0)
+  const [likes, setLikes] = useState(
+    localStorage.getItem('countfav') ? localStorage.getItem('countfav') : 0
+  )
 
   const navigate = useNavigate()
   useEffect(() => {

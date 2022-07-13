@@ -8,8 +8,12 @@ const Favourite = ({ likes, setLikes }) => {
   function handleClickFavorite() {
     console.log('fct click')
     isFavorite
-      ? setIsFavorite(false) || setLikes(likes - 1)
-      : setIsFavorite(true) || setLikes(likes + 1)
+      ? setIsFavorite(false) ||
+        setLikes(likes - 1) ||
+        localStorage.setItem('countfav', `${likes - 1}`)
+      : setIsFavorite(true) ||
+        setLikes(likes + 1) ||
+        localStorage.setItem('countfav', `${likes + 1}`)
   }
   console.log(isFavorite)
   console.log(likes)
