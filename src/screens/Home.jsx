@@ -1,33 +1,32 @@
-import { useEffect, useState } from "react";
-import SearchBar from "../components/SearchBar";
-import Reservation from "../components/Reservation";
+import { useEffect, useState } from 'react'
+import Card from '../components/Card'
+import SearchBar from '../components/SearchBar'
+import Reservation from '../components/Reservation'
 
-const Home = (props) => {
-  const { caverns, setCaverns, cavernsFiltered, setCavernsFiltered } = props;
-  const [locationChoice, setLocationChoice] = useState("");
-  const [periodChoice, setPeriodChoice] = useState("");
-  const [capacityChoice, setCapacityChoice] = useState("");
+const Home = props => {
+  const { caverns, setCaverns, cavernsFiltered, setCavernsFiltered } = props
+  const [locationChoice, setLocationChoice] = useState('')
+  const [periodChoice, setPeriodChoice] = useState('')
+  const [capacityChoice, setCapacityChoice] = useState('')
 
   useEffect(() => {
-    getCavernsFiltered();
-  }, [locationChoice, periodChoice, capacityChoice]);
+    getCavernsFiltered()
+  }, [locationChoice, periodChoice, capacityChoice])
 
   const getCavernsFiltered = async () => {
     const result = await caverns
-      .filter((cavern) =>
+      .filter(cavern =>
         locationChoice ? cavern.location === locationChoice : true
       )
-      .filter((cavern) =>
-        periodChoice ? cavern.period === periodChoice : true
-      )
-      .filter((cavern) =>
+      .filter(cavern => (periodChoice ? cavern.period === periodChoice : true))
+      .filter(cavern =>
         capacityChoice ? cavern.capacity === capacityChoice : true
-      );
-    setCavernsFiltered(result);
-  };
+      )
+    setCavernsFiltered(result)
+  }
 
   return (
-    <div className="home">
+    <div className='home'>
       <h1> Poulet Home </h1>
       <SearchBar // à déplacer dans le Header
         locationChoice={locationChoice} // à déplacer dans le Header
@@ -37,8 +36,9 @@ const Home = (props) => {
         capacityChoice={capacityChoice} // à déplacer dans le Header
         setCapacityChoice={setCapacityChoice} // à déplacer dans le Header
       />
+      <Card />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PetsOutlinedIcon from '@mui/icons-material/PetsOutlined';
 import BugReportOutlinedIcon from '@mui/icons-material/BugReportOutlined';
-import './Favourite.scss'
 
 const Favourite = () => {
 
@@ -14,7 +13,7 @@ const Favourite = () => {
 
   return (
             <div onClick={handleClickFavorite} >
-                {isFavorite ? <PetsOutlinedIcon style={{ color: 'green', fontSize: 540 }}/>  : <BugReportOutlinedIcon style={{ color: 'red', fontSize: 540 }}/> }
+                {isFavorite ? <PetsOutlinedIcon style={{ color: 'green', fontSize: 40 }}/>  : <BugReportOutlinedIcon style={{ color: 'red', fontSize: 40 }}/> }
             </div>
   )
 }
