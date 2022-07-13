@@ -33,7 +33,7 @@ const Home = () => {
       .filter(cavern =>
         capacityChoice ? cavern.capacity === capacityChoice : true
       )
-    console.log('result', { result })
+    // console.log('result', { result })
     setCavernsFiltered(result)
   }
 

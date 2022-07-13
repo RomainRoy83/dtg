@@ -1,10 +1,11 @@
 
-@import "./Card";
-@import './Faq';
-@import './Reservation';
-@import "./SearchBar";
-@import './CavernDetails';
 @import "./Home";
+@import "./Card";
+@import "./SearchBar";
+@import './Reservation';
+@import './CavernDetails';
+@import './Faq';
+@import './Favourite';
 
 * {
   margin:0;

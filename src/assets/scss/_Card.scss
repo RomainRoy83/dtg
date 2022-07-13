@@ -18,6 +18,10 @@ $secondary-font:'Oswald', sans-serif;
     display: flex;
     overflow-x: scroll;
   }
+
+  .card__wrapper_map {
+    position: relative;
+  }
   /*CARD*/
   .card__btn {
     color: #fff;
@@ -90,7 +94,7 @@ $secondary-font:'Oswald', sans-serif;
   }
   /*...small...*/
   .card-sm__container {
-    height: 232px;
+    height: 350px;
     margin: 0 -88px 0 0;
     display: flex;
     align-self: flex-end;
