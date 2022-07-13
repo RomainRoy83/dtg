@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-<<<<<<< HEAD
 import Favourite from './Favourite'
-=======
 import { useNavigate } from 'react-router-dom'
 
->>>>>>> dev
 import axios from 'axios'
+
+import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined'
 
 const Card = () => {
   const [grottos, setGrottos] = useState([])
@@ -44,16 +43,20 @@ const Card = () => {
 
         <section className='card-sm__container'>
           {grottos.map(grotto => (
-            <section
-              key={grotto.id}
-              className='card-sm'
-              style={{ backgroundImage: `url(${grotto.photo})` }}
-              onClick={() => navigate(`/detailsgrotte/${grotto.id}`)}
-            >
-              <p className='card__text-sm'>{grotto.location}</p>
-              <h1 className='card__text-lg'>{grotto.name}</h1>
-              <Favourite />
-            </section>
+            <div className='card__wrapper_map'>
+              <section
+                key={grotto.id}
+                className='card-sm'
+                style={{ backgroundImage: `url(${grotto.photo})` }}
+                onClick={() => navigate(`/detailsgrotte/${grotto.id}`)}
+              >
+                <p className='card__text-sm'>{grotto.location}</p>
+                <h1 className='card__text-lg'>{grotto.name}</h1>
+              </section>
+              <div className='card__fav'>
+                <Favourite />
+              </div>
+            </div>
           ))}
         </section>
       </main>
